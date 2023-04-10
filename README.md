@@ -1,4 +1,6 @@
-Markup :  #Bank Account API#
+Markup :  # Heading 1 #
+
+Markup :  # Bank Account API #
 This is an API for managing bank accounts, built using Node.js, Express, and MongoDB.
 
 Markup :  ##Getting Started##
