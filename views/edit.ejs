@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit Bank Account</title>
+  </head>
+  <body>
+    <h1>Edit Bank Account</h1>
+    <form action="/accounts/<%= account._id %>" method="POST">
+      <input type="hidden" name="_method" value="PUT">
+      <label for="accountNumber">Account Number:</label>
+      <input type="text" name="accountNumber" value="<%= account.accountNumber %>" required><br>
+      <label for="balance">Balance:</label>
+      <input type="number" name="balance" value="<%= account.balance %>" required><br>
+      <label for="owner.name">Owner Name:</label>
+      <input type="text" name="owner.name" value="<%= account.owner.name %>" required><br>
+      <label for="owner.email">Owner Email:</label>
+      <input type="email" name="owner.email" value="<%= account.owner.email %>" required><br>
+      <input type="submit" value="Update Account">
+    </form>
+  </body>
+</html>

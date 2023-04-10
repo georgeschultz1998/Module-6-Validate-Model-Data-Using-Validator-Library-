@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%= customer.name %></title>
+</head>
+<body>
+  <h1><%= customer.name %></h1>
+  <p>Address: <%= customer.address %></p>
+  <p>Phone: <%= customer.phone %></p>
+  <p>Email: <%= customer.email %></p>
+  <p>Accounts:</p>
+  <ul>
+    <% customer.accounts.forEach(function(account) { %>
+    <li><a href="/accounts/<%= account._id %>"><%= account.name %></a></li>
+    <% }) %>
+  </ul>
+  <a href="/customers/<%= customer._id %>/edit">Edit</a>
+  <form action="/customers/<%= customer._id %>?_method=DELETE" method="POST">
+    <button>Delete</button>
+  </form>
+</body>
+</html>
