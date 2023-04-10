@@ -52,7 +52,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/customers/64339aec81ff90ba862982ed",
+					"raw": "http://localhost:8000/customers/6433a81234cbb0e70171c098",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -60,7 +60,7 @@
 					"port": "8000",
 					"path": [
 						"customers",
-						"64339aec81ff90ba862982ed"
+						"6433a81234cbb0e70171c098"
 					]
 				}
 			},
@@ -72,7 +72,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/accounts/64339ab181ff90ba862982e7",
+					"raw": "http://localhost:8000/accounts/6433a81f34cbb0e70171c09d",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -80,36 +80,7 @@
 					"port": "8000",
 					"path": [
 						"accounts",
-						"64339ab181ff90ba862982e7"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Post3Accounts",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "[\n  {\n    \"accountNumber\": \"12345678\",\n    \"accountType\": \"Checking\",\n    \"balance\": 5000,\n    \"interestRate\": 0.02,\n    \"overdraftProtection\": true,\n    \"owner\": {\n      \"firstName\": \"John\",\n      \"lastName\": \"Doe\",\n      \"email\": \"johndoe@example.com\",\n      \"phone\": \"555-123-4567\",\n      \"address\": {\n        \"street\": \"123 Main St\",\n        \"city\": \"Anytown\",\n        \"state\": \"CA\",\n        \"zip\": \"12345\"\n      }\n    }\n  },\n  {\n    \"accountNumber\": \"23456789\",\n    \"accountType\": \"Savings\",\n    \"balance\": 10000,\n    \"interestRate\": 0.03,\n    \"overdraftProtection\": false,\n    \"owner\": {\n      \"firstName\": \"Jane\",\n      \"lastName\": \"Doe\",\n      \"email\": \"janedoe@example.com\",\n      \"phone\": \"555-123-4567\",\n      \"address\": {\n        \"street\": \"456 Oak St\",\n        \"city\": \"Anytown\",\n        \"state\": \"CA\",\n        \"zip\": \"12345\"\n      }\n    }\n  },\n  {\n    \"accountNumber\": \"34567890\",\n    \"accountType\": \"Money Market\",\n    \"balance\": 15000,\n    \"interestRate\": 0.04,\n    \"overdraftProtection\": true,\n    \"owner\": {\n      \"firstName\": \"Bob\",\n      \"lastName\": \"Smith\",\n      \"email\": \"bobsmith@example.com\",\n      \"phone\": \"555-123-4567\",\n      \"address\": {\n        \"street\": \"789 Elm St\",\n        \"city\": \"Anytown\",\n        \"state\": \"CA\",\n        \"zip\": \"12345\"\n      }\n    }\n  }\n]\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8000/accounts/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"accounts",
-						""
+						"6433a81f34cbb0e70171c09d"
 					]
 				}
 			},
@@ -145,13 +116,13 @@
 			"response": []
 		},
 		{
-			"name": "UpdateCustomerByID",
+			"name": "Post3Accounts",
 			"request": {
-				"method": "PUT",
+				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"firstName\": \"Jake\",\n  \"lastName\": \"Doe\",\n  \"email\": \"johndoe@example.com\",\n  \"address\": {\n    \"street\": \"123 Main St\",\n    \"city\": \"Anytown\",\n    \"state\": \"CA\",\n    \"zip\": \"12345\"\n  }\n}\n\n",
+					"raw": "[\n  {\n    \"accountNumber\": \"12325378\",\n    \"accountType\": \"Checking\",\n    \"balance\": 5000,\n    \"interestRate\": 0.02,\n    \"overdraftProtection\": true,\n    \"owner\": {\n      \"firstName\": \"John\",\n      \"lastName\": \"Doe\",\n      \"email\": \"johndoe2@example.com\",\n      \"phone\": \"555-123-4567\",\n      \"address\": {\n        \"street\": \"123 Main St\",\n        \"city\": \"Anytown\",\n        \"state\": \"CA\",\n        \"zip\": \"12345\"\n      }\n    }\n  },\n  {\n    \"accountNumber\": \"23426789\",\n    \"accountType\": \"Savings\",\n    \"balance\": 10000,\n    \"interestRate\": 0.03,\n    \"overdraftProtection\": false,\n    \"owner\": {\n      \"firstName\": \"Jane\",\n      \"lastName\": \"Doe\",\n      \"email\": \"janedoe3@example.com\",\n      \"phone\": \"555-123-4567\",\n      \"address\": {\n        \"street\": \"456 Oak St\",\n        \"city\": \"Anytown\",\n        \"state\": \"CA\",\n        \"zip\": \"12345\"\n      }\n    }\n  },\n  {\n    \"accountNumber\": \"34527890\",\n    \"accountType\": \"Money Market\",\n    \"balance\": 15000,\n    \"interestRate\": 0.04,\n    \"overdraftProtection\": true,\n    \"owner\": {\n      \"firstName\": \"Bob\",\n      \"lastName\": \"Smith\",\n      \"email\": \"bobsmith4@example.com\",\n      \"phone\": \"555-123-4567\",\n      \"address\": {\n        \"street\": \"789 Elm St\",\n        \"city\": \"Anytown\",\n        \"state\": \"CA\",\n        \"zip\": \"12345\"\n      }\n    }\n  }\n]\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -159,7 +130,36 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/customers/64339aec81ff90ba862982ed",
+					"raw": "http://localhost:8000/accounts/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateCustomerByID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n    \"email\": \"janedoenewemail@gmail.com\"\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/customers/6433a81234cbb0e70171c098",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -167,7 +167,7 @@
 					"port": "8000",
 					"path": [
 						"customers",
-						"64339aec81ff90ba862982ed"
+						"6433a81234cbb0e70171c098"
 					]
 				}
 			},
@@ -180,7 +180,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"accountNumber\": \"123456789\",\n    \"balance\": 5000,\n    \"ownerName\": \"John Doe\",\n    \"ownerEmail\": \"johndoe@example.com\",\n    \"ownerAddress\": \"123 Main St, Anytown, USA\"\n}\n",
+					"raw": "{\n    \"balance\": 4900\n}\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -188,7 +188,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/accounts/64339ab181ff90ba862982e7",
+					"raw": "http://localhost:8000/accounts/6433a81f34cbb0e70171c09d",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -196,7 +196,7 @@
 					"port": "8000",
 					"path": [
 						"accounts",
-						"64339ab181ff90ba862982e7"
+						"6433a81f34cbb0e70171c09d"
 					]
 				}
 			},
@@ -208,15 +208,15 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/accounts/64339aec81ff90ba862982ed",
+					"raw": "http://localhost:8000/customers/6433a81234cbb0e70171c098",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"accounts",
-						"64339aec81ff90ba862982ed"
+						"customers",
+						"6433a81234cbb0e70171c098"
 					]
 				}
 			},
@@ -228,15 +228,15 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/loans/64339ab181ff90ba862982e7",
+					"raw": "http://localhost:8000/accounts/6433a81f34cbb0e70171c09d",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"loans",
-						"64339ab181ff90ba862982e7"
+						"accounts",
+						"6433a81f34cbb0e70171c09d"
 					]
 				}
 			},
